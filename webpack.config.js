@@ -2,7 +2,7 @@ var path = require('path');
 var webpack = require('webpack');
 
 var BUILD_DIR = path.resolve(__dirname, 'build');
-var APP_DIR = path.resolve(__dirname, 'src/app');
+var APP_DIR = path.resolve(__dirname, 'src');
 
 var config = {
   devtool: 'cheap-module-eval-source-map',
