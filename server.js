@@ -13,6 +13,7 @@ app.use(webpackDevMiddleware(compiler, {
 }))
 app.use(webpackHotMiddleware(compiler))
 
+// * added not to have 'CANNOT GET' on non base url
 app.get("/*", function(req, res) {
   res.sendFile(__dirname + '/index.html')
 })
